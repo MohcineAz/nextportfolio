@@ -19,12 +19,21 @@ const MenuList = [
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center">
-      <div className="logo font-bold text-2xl underline  underline-offset-8">it's me</div>
+    <div className="flex justify-between items-center p-4">
+      <div className="logo font-bold text-2xl underline  underline-offset-8">
+        it's me
+      </div>
       <ul className="flex gap-4">
         {MenuList.map((menu) => (
-          <li key={menu.id} className=" leading-3  border-t-2 pt-4 inline-block">
-           <span className="flex items-center gap-1 font-bold "> {menu.name} <Image className="w-4 h-4" src={arrow} alt="arrow"/></span> <br /> <div className="w-2/3 leading-4">{menu.subtitle} </div>
+          <li
+            key={menu.id}
+            className=" leading-3  border-t-2 pt-4 inline-block cursor-pointer"
+          >
+            <span className="flex items-center gap-1 font-bold ">
+              {" "}
+              {menu.name} <Image className="w-4 h-4" src={arrow} alt="arrow" />
+            </span>{" "}
+            <br /> <div className="w-2/3 leading-4">{menu.subtitle} </div>
           </li>
         ))}
       </ul>

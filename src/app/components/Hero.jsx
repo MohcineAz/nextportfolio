@@ -4,11 +4,12 @@ import Image from "next/image";
 import hero from "../assets/men.png";
 import down from "../assets/arrow-down.png";
 import Shape from "./Shape";
+import BlackBar from "./BlackBar";
 const Hero = () => {
   return (
     <div className="relative">
-      <Navbar />
-      <div className="mt-6 flex justify-between items-center">
+      <Navbar/>
+      <div className="mt-6 flex justify-between items-center p-4 pb-0">
         <div className="basis-1/2">
           <div className="flex flex-col space-y-10">
             <div className="hand">
@@ -61,6 +62,7 @@ const Hero = () => {
         </div>
       </div>
       <Shape className="" />
+      
     </div>
   );
 };
