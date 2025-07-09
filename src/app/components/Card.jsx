@@ -18,9 +18,9 @@ const Card = () => {
           key={index}
           className="border-2 p-6 flex flex-col justify-between items-start h-[300px] w-full max-w-[300px]"
         >
-          <Image src={card.img} alt="card image" />
-          <span className="font-semibold text-2xl mt-4">{card.name}</span>
-          <button className="cursor-pointer flex items-center gap-1 mt-auto text-black">
+          <Image src={card.img} alt="card image" className="size-10"/>
+          <span className="font-semibold text-2xl">{card.name}</span>
+          <button className="cursor-pointer flex items-center gap-1  text-black">
             Read More <Image src={arrow} alt="arrow" height={12} />
           </button>
         </div>
